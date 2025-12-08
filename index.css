@@ -1,4 +1,13 @@
 /* BARRE NAVIGATION */
+.logo-nav{
+width: 84;
+height: 31;
+top: 25px;
+left: 98px;
+angle: 0 deg;
+opacity: 1;
+}
+
 nav {
     background-color: #152237;
 }
@@ -6,7 +15,7 @@ nav {
 /* HEADER */
 /* https://www.w3schools.com/howto/howto_css_hero_image.asp */
 .img-header {
-    background-image:  url('./images/bg-header.png');
+    background-image: linear-gradient(94.01deg, rgba(51, 153, 97, 0.8) 3.11%, rgba(21, 183, 226, 0.8) 98.45%), url('./images/bg-header.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
