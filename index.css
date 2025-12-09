@@ -1,26 +1,168 @@
+/* permet de ne pas avoir de blanc autour */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* LES CLASSES */
+.display {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 /* BARRE NAVIGATION */
-.logo-nav{
-width: 84;
-height: 31;
-top: 25px;
-left: 98px;
-angle: 0 deg;
-opacity: 1;
+#logo-nav {
+    width: 5%;
+    height: 31px;
+    position: absolute;
+    top: 25px;
+    left: 5.8%
 }
 
 nav {
+    width: 100%;
+    height: 80px;
     background-color: #152237;
 }
 
-/* HEADER */
+#titre-formation {
+    height: 18px;
+    width: 6.5%;
+    position: absolute;
+    top: 31px;
+    left: 20, 8%;
+    color: #FFFFFF;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 15px;
+    /* leading-trim: NONE; */
+    line-height: 100%;
+    letter-spacing: -1.5%;
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+#contour-search {
+    border: 1px solid #FFFFFF;
+}
+
+#search {
+    height: 40px;
+    width: 28.4%;
+    position: absolute;
+    top: 20px;
+    left: 35.9%;
+    border: mixte 1px solid #FFFFFF;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 15px;
+    /* leading-trim: NONE; */
+    line-height: 100%;
+    letter-spacing: -1.5%;
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+#connexion {
+    height: 40px;
+    width: 7.7%;
+    position: absolute;
+    top: 20px;
+    left: 77, 4%;
+    border-radius: 6px;
+    background: #FFFFFF;
+    color: #152237;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 15px;
+    /* leading-trim: NONE; */
+    line-height: 100%;
+    letter-spacing: -1.5%;
+    text-align: center;
+    vertical-align: middle;
+
+
+}
+
+#inscription {
+    height: 40px;
+    width: 7.7%;
+    position: absolute;
+    top: 20px;
+    left: 86, 3%;
+    border-radius: 6px;
+    color: #152237;
+    background: linear-gradient(95.98deg, #44DD8A 8.7%, #15B7E2 100%);
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 15px;
+    /* leading-trim: NONE; */
+    line-height: 100%;
+    letter-spacing: -1.5%;
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+
+/* HEADER avec bannière */
 /* https://www.w3schools.com/howto/howto_css_hero_image.asp */
-.img-header {
+.banniere {
     background-image: linear-gradient(94.01deg, rgba(51, 153, 97, 0.8) 3.11%, rgba(21, 183, 226, 0.8) 98.45%), url('./images/bg-header.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 451px;
-    width: 1680px;
-    top: -2px;
-    /* haut -2 */
+    height: 450px;
+    width: 100%;
+}
+
+.banniere h1 {
+    height: 59px;
+    width: 60.7%;
+    position: absolute;
+    top: 149px;
+    left: 19.6%;
+    font-family: Montserrat;
+    font-weight: 800;
+    font-style: ExtraBold;
+    font-size: 48px;
+    /* leading-trim: NONE; */
+    line-height: 100%;
+    letter-spacing: -1.5%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+
+}
+
+.banniere h4 {
+    height: 24px;
+    width: 42, 3;
+    position: absolute;
+    top: 216px;
+    left: 28.8%
+}
+
+#savoir-plus {
+    height: 40px;
+    width: 7.7%;
+    position: absolute;
+    top: 262px;
+    left: 46.1%;
+    border-radius: 6px;
+    background: #FFFFFF;
+    color: #152237;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 15px;
+    /* leading-trim: NONE; */
+    line-height: 100%;
+    letter-spacing: -1.5%;
+    text-align: center;
+    vertical-align: middle;
 }
