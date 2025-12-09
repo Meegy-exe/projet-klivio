@@ -73,7 +73,7 @@ nav {
     width: 7.7%;
     position: absolute;
     top: 20px;
-    left: 77, 4%;
+    left: 77,4%;
     border-radius: 6px;
     background: #FFFFFF;
     color: #152237;
@@ -94,7 +94,7 @@ nav {
     width: 7.7%;
     position: absolute;
     top: 20px;
-    left: 86, 3%;
+    left: 86,3%;
     border-radius: 6px;
     color: #152237;
     background: linear-gradient(95.98deg, #44DD8A 8.7%, #15B7E2 100%);
@@ -137,6 +137,8 @@ nav {
     text-align: center;
     vertical-align: middle;
     text-transform: uppercase;
+    color: #152237;
+;
 
 }
 
@@ -145,7 +147,21 @@ nav {
     width: 42, 3;
     position: absolute;
     top: 216px;
-    left: 28.8%
+    left: 28.8%;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 20px;
+    /* leading-trim: NONE; */
+    line-height: 100%;
+    letter-spacing: -1.5%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #000000;
+;
+
+
 }
 
 #savoir-plus {
