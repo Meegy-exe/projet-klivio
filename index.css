@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+.antipoint li {
+    list-style-type: none;
+}
+
 /* LES CLASSES */
 .display {
     display: flex;
@@ -43,11 +47,8 @@ nav {
     letter-spacing: -1.5%;
     text-align: center;
     vertical-align: middle;
+    text-decoration: none;
 
-}
-
-#contour-search {
-    border: 1px solid #FFFFFF;
 }
 
 #search {
@@ -73,7 +74,7 @@ nav {
     width: 7.7%;
     position: absolute;
     top: 20px;
-    left: 77,4%;
+    left: 77, 4%;
     border-radius: 6px;
     background: #FFFFFF;
     color: #152237;
@@ -94,7 +95,7 @@ nav {
     width: 7.7%;
     position: absolute;
     top: 20px;
-    left: 86,3%;
+    left: 86, 3%;
     border-radius: 6px;
     color: #152237;
     background: linear-gradient(95.98deg, #44DD8A 8.7%, #15B7E2 100%);
@@ -138,7 +139,6 @@ nav {
     vertical-align: middle;
     text-transform: uppercase;
     color: #152237;
-;
 
 }
 
@@ -159,7 +159,7 @@ nav {
     vertical-align: middle;
     text-transform: uppercase;
     color: #000000;
-;
+    ;
 
 
 }
@@ -181,4 +181,105 @@ nav {
     letter-spacing: -1.5%;
     text-align: center;
     vertical-align: middle;
+}
+
+/* PARTIE FORMULAIRES POPULAIRES */
+.section {
+    height: 632px;
+    width: 100%;
+    position: relative;
+    background-color: #FFFFFF;
+}
+
+.section h2 {
+    height: 72px;
+    width: 28.9%;
+    position: absolute;
+    left: 5.8%;
+    top: 30px;
+    font-family: Montserrat;
+    font-weight: 800;
+    font-style: ExtraBold;
+    font-size: 36px;
+    /* leading-trim: NONE; */
+    line-height: 72px;
+    letter-spacing: -1.5%;
+    color: #152237;
+
+}
+
+#sonia {
+    width: 17.44%;
+    height: 25px;
+    position: absolute;
+    top: 402px;
+    left: 6.79%;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 16px;
+    /* leading-trim: NONE; */
+    line-height: 25px;
+    letter-spacing: 0%;
+    color: #152237;
+
+}
+
+.card-form {
+    height: 362px;
+    width: 18.27%;
+    position: absolute;
+    top: 136px;
+    left: 5.95%;
+    border: 1px solid #aa1313;
+    /* border a retirer */
+    border-radius: 6px;
+    opacity: 1;
+
+}
+
+.price {
+    height: 31.58%;
+    width: 7.14%;
+    position: absolute;
+    top: 326px;
+    left: 16.3%;
+    background: #152237;
+    color: #FFFFFF;
+    border-radius: 93px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.big-price {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 20px;
+    /* leading-trim: NONE; */
+    line-height: 20px;
+    letter-spacing: -1.5%;
+
+}
+
+.litle-price {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 10px;
+    /* leading-trim: NONE; */
+    line-height: 7px;
+    letter-spacing: -1.5%;
+    text-decoration: line-through;
+
+}
+
+.star svg {
+    /* width: 5px;
+    height: 5px; */
+    opacity: 1;
+    top: 432px;
+    left: 138px;
+    width: 20.130027770996094px;
+    height: 19.19999885559082px;
 }
