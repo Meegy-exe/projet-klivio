@@ -10,24 +10,38 @@
 
 <body>
     <header>
-        <nav>
-            <a hreflang="#" class="logo-nav"><img src="./images/logo.png" alt="Logo Klivio"></a>
-            <a href="#">Les formations</a>
-            <form>
-                <input type="search" name="search" placeholder="Rechercher" />
-                <input type="submit" value="Emoji a mettre" />
-            </form>
-            <a href="#">Connexion</a>
-            <a href="#">Inscription</a>
+        <nav class="display">
+            <div>
+                <div>
+                    <a hreflang="#"><img src="./images/logo.png" alt="Logo Klivio" id="logo-nav"></a>
+                </div>
+                <div>
+                    <a href="#" id="titre-formation">Les formations</a>
+                </div>
+                <div id="contour-search">
+                    <form id="search">
+                        <input type="search" name="search" placeholder="Rechercher" />
+                        <img src="./icon/Icon.png" alt="Icone de loupe">
+                    </form>
+                </div>
+                <div>
+                    <a href="#" id="connexion">Connexion</a>
+                </div>
+                <div>
+                    <a href="#" id="inscription">Inscription</a>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
         <!-- Partie du haut avec H1 -->
-        <div class="img-header">
+         <section class="banniere">
+        <!-- <div class="img-header"> -->
             <h1>Klivio, l’allié de votre progression</h1>
             <h4>Les meilleures formations sur le développement personnel</h4>
-            <a href="#">En savoir plus</a>
+            <a href="#" id="savoir-plus">En savoir plus</a>
         </div>
+        </section>
         <!-- Partie les formations popu-->
         <div>
             <div>
