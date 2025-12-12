@@ -5,109 +5,175 @@
     box-sizing: border-box;
 }
 
-.antipoint li {
-    list-style-type: none;
+/* FONTS */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
+    font-weight: 100 900;
+    font-style: normal;
 }
 
-/* LES CLASSES */
-.display {
+/* FONT AWESOME */
+.fa-magnifying-glass {
+    color: #FFFFFF;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* .antipoint li {
+    list-style-type: none;
+} */
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* test pour pixel perfect+responsive */
+.responsive {
+    width: 100%;
+    max-width: 1680px;
+    height: 100%;
     display: flex;
     align-items: center;
-    flex-direction: row;
-    justify-content: space-around;
+    padding-left: 98px;
+    padding-right: 101px;
 }
+
 
 /* BARRE NAVIGATION */
-#logo-nav {
-    width: 5%;
-    height: 31px;
-    position: absolute;
-    top: 25px;
-    left: 5.8%
+.navbar {
+    background-color: #152237;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 100%;
 }
 
-nav {
-    width: 100%;
-    height: 80px;
-    background-color: #152237;
+.navbar-content {
+    display: flex;
+    align-items: center;
+}
+
+.navGauche {
+    align-items: center;
+    /* utiliser gap pour espace entre logo et titre */
+    gap: 168px;
+    display: flex;
+}
+
+.navMilieu {
+    margin-left: 143px;
+    margin-right: 220px;
+}
+
+.navDroite {
+    gap: 19px;
+    display: flex;
 }
 
 #titre-formation {
-    height: 18px;
-    width: 6.5%;
-    position: absolute;
-    top: 31px;
-    left: 20, 8%;
+    text-decoration: none;
+    width: 110px;
     color: #FFFFFF;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 15px;
-    /* leading-trim: NONE; */
-    line-height: 100%;
-    letter-spacing: -1.5%;
-    text-align: center;
-    vertical-align: middle;
-    text-decoration: none;
+    white-space: nowrap;
 
 }
 
+#logo-nav {
+    width: 84px;
+    height: 31px;
+    display: block;
+}
+
+/* input barre de recherche */
 #search {
-    height: 40px;
-    width: 28.4%;
-    position: absolute;
-    top: 20px;
-    left: 35.9%;
-    border: mixte 1px solid #FFFFFF;
-    font-family: Montserrat;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #FFFFFF;
+    border-radius: 6px;
+    background-color: #152237;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 17px;
+    padding-right: 40px;
+
+
+}
+
+#search::placeholder {
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 15px;
-    /* leading-trim: NONE; */
     line-height: 100%;
     letter-spacing: -1.5%;
-    text-align: center;
-    vertical-align: middle;
+}
 
+#barre-recherche {
+    position: relative;
+    width: 477px;
+    height: 40px;
+}
+
+.btnNav {
+    border-radius: 6px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    width: 130px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #connexion {
-    height: 40px;
-    width: 7.7%;
-    position: absolute;
-    top: 20px;
-    left: 77, 4%;
-    border-radius: 6px;
-    background: #FFFFFF;
     color: #152237;
-    font-family: Montserrat;
-    font-weight: 500;
-    font-size: 15px;
-    /* leading-trim: NONE; */
-    line-height: 100%;
-    letter-spacing: -1.5%;
-    text-align: center;
-    vertical-align: middle;
-
-
+    background-color: #FFFFFF;
 }
 
 #inscription {
-    height: 40px;
-    width: 7.7%;
-    position: absolute;
-    top: 20px;
-    left: 86, 3%;
-    border-radius: 6px;
     color: #152237;
     background: linear-gradient(95.98deg, #44DD8A 8.7%, #15B7E2 100%);
-    font-family: Montserrat;
-    font-weight: 500;
-    font-size: 15px;
-    /* leading-trim: NONE; */
-    line-height: 100%;
-    letter-spacing: -1.5%;
-    text-align: center;
-    vertical-align: middle;
+}
 
+
+/* TEST MEDIA */
+@media (max-width: 1600px) {
+    .responsive {
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    .navMilieu {
+        flex-grow: 1;
+        margin: 0 20px;
+    }
+
+    .navGauche {
+        gap: 20px;
+    }
+
+    #barre-recherche {
+        width: 100%;
+    }
+
+    @media (max-width: 1000px) {
+        #titre-formation {
+            display: none;
+        }
+    }
 }
 
 
@@ -118,168 +184,486 @@ nav {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 450px;
+    height: 451px;
+    display: flex;
     width: 100%;
+    justify-content: center;
 }
 
 .banniere h1 {
-    height: 59px;
-    width: 60.7%;
-    position: absolute;
-    top: 149px;
-    left: 19.6%;
-    font-family: Montserrat;
+    max-width: 1021px;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 8px;
     font-weight: 800;
-    font-style: ExtraBold;
+    font-family: 'Montserrat', sans-serif;
     font-size: 48px;
-    /* leading-trim: NONE; */
-    line-height: 100%;
-    letter-spacing: -1.5%;
-    text-align: center;
-    vertical-align: middle;
-    text-transform: uppercase;
     color: #152237;
+    line-height: 100%;
+    text-transform: uppercase;
+}
 
+.banniere-content {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
 .banniere h4 {
-    height: 24px;
-    width: 42, 3;
-    position: absolute;
-    top: 216px;
-    left: 28.8%;
     font-family: Montserrat;
     font-weight: 500;
     font-style: Medium;
     font-size: 20px;
-    /* leading-trim: NONE; */
     line-height: 100%;
     letter-spacing: -1.5%;
     text-align: center;
     vertical-align: middle;
     text-transform: uppercase;
-    color: #000000;
-    ;
-
+    color: #152237;
+    max-width: 711px;
+    margin: 0;
+    margin-bottom: 22px;
+    width: 100%;
 
 }
 
 #savoir-plus {
-    height: 40px;
-    width: 7.7%;
-    position: absolute;
-    top: 262px;
-    left: 46.1%;
     border-radius: 6px;
     background: #FFFFFF;
     color: #152237;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 15px;
-    /* leading-trim: NONE; */
     line-height: 100%;
     letter-spacing: -1.5%;
     text-align: center;
     vertical-align: middle;
-}
-
-/* PARTIE FORMULAIRES POPULAIRES */
-.section {
-    height: 632px;
-    width: 100%;
-    position: relative;
-    background-color: #FFFFFF;
-}
-
-.section h2 {
-    height: 72px;
-    width: 28.9%;
-    position: absolute;
-    left: 5.8%;
-    top: 30px;
-    font-family: Montserrat;
-    font-weight: 800;
-    font-style: ExtraBold;
-    font-size: 36px;
-    /* leading-trim: NONE; */
-    line-height: 72px;
-    letter-spacing: -1.5%;
-    color: #152237;
-
-}
-
-#sonia {
-    width: 17.44%;
-    height: 25px;
-    position: absolute;
-    top: 402px;
-    left: 6.79%;
-    font-family: Montserrat;
-    font-weight: 400;
-    font-size: 16px;
-    /* leading-trim: NONE; */
-    line-height: 25px;
-    letter-spacing: 0%;
-    color: #152237;
-
-}
-
-.card-form {
-    height: 362px;
-    width: 18.27%;
-    position: absolute;
-    top: 136px;
-    left: 5.95%;
-    border: 1px solid #aa1313;
-    /* border a retirer */
-    border-radius: 6px;
-    opacity: 1;
-
-}
-
-.price {
-    height: 31.58%;
-    width: 7.14%;
-    position: absolute;
-    top: 326px;
-    left: 16.3%;
-    background: #152237;
-    color: #FFFFFF;
-    border-radius: 93px;
+    /* width: 130px;
+    height: 40px; */
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
+}
+
+/* PARTIE FORMULAIRES POPULAIRES */
+
+.section-pop {
+    padding-top: 30px;
+    padding-bottom: 51px;
+    background-color: #FFFFFF;
+    overflow: hidden;
+}
+
+/* TEST RESPONSIVE */
+.section-pop .responsive {
+    height: auto;
+    padding: 0;
+    display: block;
+}
+
+.titre-pop {
+    color: #152237;
+    margin: 0;
+    margin-left: 97px;
+    margin-bottom: 34px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: 800;
 
 }
 
-.big-price {
-    font-family: Montserrat;
+
+.card-form {
+    display: flex;
+    gap: 90px;
+    justify-content: flex-start;
+    /* wrap pour responsive */
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 100px;
+
+}
+
+.card {
+    position: relative;
+    width: 305px;
+    height: 362px;
+    display: flex;
+    flex-direction: column;
+}
+
+.green-part {
+    margin-bottom: 21px;
+    width: 305px;
+    height: 206px;
+    border-radius: 6px;
+    background-color: #44DD8A;
+
+}
+
+.card1content {
+    max-width: 280px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 14px;
+    margin: 0;
+    color: #152237;
+    line-height: 18px;
+}
+
+.accroche-card {
+    color: #152237;
+    max-width: 280px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 14px;
+    margin-bottom: 11px;
+    line-height: 18px;
+    margin: 0;
+}
+
+.cardH3 {
+    color: #152237;
+    margin-left: 14px;
+    margin: 0;
+    margin-bottom: 11px;
+    font-size: 24px;
     font-weight: 700;
-    font-size: 20px;
-    /* leading-trim: NONE; */
-    line-height: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nom1 {
+    margin: 0;
+    margin-left: 14px;
+    margin-bottom: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #152237;
+}
+
+/* PASTILLE PRIX */
+
+.price {
+    z-index: 10;
+    color: #FFFFFF;
+    position: absolute;
+    top: 190px;
+    right: 15px;
+    background-color: #152237;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.big-price {
+    font-weight: 400;
+    font-size: 10px;
+    text-decoration: line-through;
+    line-height: 100%;
+    opacity: 0.7;
     letter-spacing: -1.5%;
 
 }
 
 .litle-price {
-    font-family: Montserrat;
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 10px;
-    /* leading-trim: NONE; */
-    line-height: 7px;
-    letter-spacing: -1.5%;
-    text-decoration: line-through;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* ETOILE */
+.star {
+    margin-left: 14px;
+    margin-bottom: 10.8px;
+    display: flex;
+    color: #ffc700;
+    gap: 2px;
+}
+
+.no-star {
+    margin-left: 14px;
+    margin-bottom: 10.8px;
+    display: flex;
+    font-size: 12px;
+    color: #ffc700;
+    gap: 2px;
+    opacity: 0.3;
+}
+
+/* VOIR PLUS DE FORM */
+
+.btnVoirContent {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.btnVoir {
+    background-color: #152237;
+    color: #FFFFFF;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'Montserrat' sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    width: 225px;
+    height: 40px;
 
 }
 
-.star svg {
-    /* width: 5px;
-    height: 5px; */
-    opacity: 1;
-    top: 432px;
-    left: 138px;
-    width: 20.130027770996094px;
-    height: 19.19999885559082px;
+/* TEST MEDIA BAN FORM POP */
+@media (max-width: 1600px) {
+    .section-pop {
+        padding: 30px 20px;
+    }
+
+    .titre-pop {
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    .card-form {
+        gap: 30px;
+        margin-left: 0;
+        justify-content: center;
+
+    }
+}
+
+/* PARTIE FORM RECENTE */
+.section-rec {
+    padding-bottom: 51px;
+    background-color: #152237;
+    padding-top: 30px;
+}
+
+/* TEST RESPONSIVE */
+.section-rec .responsive {
+    padding: 0;
+    display: block;
+}
+
+.titre-rec {
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 34px;
+    margin-left: 97px;
+    margin: 0;
+}
+
+.blue-card {
+    position: relative;
+    width: 305px;
+    height: 362px;
+    display: flex;
+    flex-direction: column;
+    background-color: #152237;
+}
+
+.cardH3R {
+    color: #FFFFFF;
+}
+
+.nom2 {
+    color: #FFFFFF;
+}
+
+.accroche-card2 {
+    color: #FFFFFF;
+}
+
+.btnVoir2 {
+    background: #FFFFFF;
+    color: #152237;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'Montserrat' sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    width: 225px;
+    height: 40px;
+}
+
+.price2 {
+    background-color: #FFFFFF;
+    color: #152237;
+    z-index: 10;
+    position: absolute;
+    top: 190px;
+    right: 15px;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 1600px) {
+    .section-rec {
+        padding: 30px 20px;
+    }
+
+    .titre-rec {
+        text-align: center;
+        margin-left: 0px;
+    }
+}
+
+/* AVIS CLIENTS */
+.section-avis {
+    overflow: hidden;
+    background-color: #FFFFFF;
+    padding-bottom: 131px;
+    padding-top: 58px;
+}
+
+/* RESPONSIVE TEST */
+.section-avis .responsive {
+    padding: 0;
+    display: block;
+}
+
+.contentAVIS {
+    justify-content: center;
+    width: 100%;
+    gap: 24px;
+    display: contents;
+}
+
+.titre-avis {
+    color: #152237;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 34px;
+    margin-left: 97px;
+    margin: 0;
+}
+
+.cardAVIS {
+    align-items: flex-start;
+    width: 689px;
+    display: flex;
+    flex-direction: column;
+}
+
+.imgAVIS {
+    margin-bottom: 1px;
+    border-radius: 50%;
+    width: 139px;
+    height: 139px;
+}
+
+.nom3 {
+    margin: 0;
+    margin-bottom: 7px;
+    margin-left: 3px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #152237;
+}
+
+.textAv1 {
+    color: #152237;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0;
+    margin-left: 3px;
+    max-width: 686px;
+    opacity: 0.8;
+}
+
+
+
+.starAVIS {
+    gap: 2px;
+    display: flex;
+    margin-bottom: 13.8px;
+    margin-left: 2px;
+    color: #ffc700;
+}
+
+/* TEST RESPONSIVE MEDIA */
+@media (max-width: 1200px) {
+    .contentAVIS {
+        gap: 50px;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .cardAVIS {
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    .contentAVIS {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .textAv1 {
+        margin-left: 0;
+    }
+}
+
+
+/* PARTIE AVANTAGES */
+.section-avantages {
+    height: 641px;
+    width: 100%;
+    background: #F5F5F5;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.section-avantages .responsive {
+    height: 100%;
+    padding: 0;
+    position: relative;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.avantageContent {
+    margin-left: 98px;
+    padding-top: 79px;
+}
+
+.titre-avantage {
+    font-size: 40px;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+    color: #152237;
+    line-height: 36px;
+    margin: 0;
+    margin-bottom: 43px;
+    max-width: 686px;
+    text-decoration: uppercase;
+    
 }
