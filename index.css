@@ -633,7 +633,7 @@ body {
 
 
 /* PARTIE AVANTAGES */
-.section-avantages {
+.section-avantage {
     height: 641px;
     width: 100%;
     background: #F5F5F5;
@@ -642,17 +642,21 @@ body {
 
 }
 
-.section-avantages .responsive {
+.section-avantage .responsive {
     height: 100%;
     padding: 0;
     position: relative;
     padding: 0;
     margin: 0 auto;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
 }
 
 .avantageContent {
     margin-left: 98px;
     padding-top: 79px;
+    max-width: 50%;
 }
 
 .titre-avantage {
